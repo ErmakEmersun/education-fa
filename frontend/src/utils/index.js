@@ -9,7 +9,8 @@ export function createToast(options) {
 export function getCalendarDates(month = 0, year = 0) {
   let daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
   let firstDay = new Date(year, month, 1)
-  let leftPadding = firstDay.getDay()
+  // Iranian calendar weeks begin on Saturday (JavaScript Sunday = 0).
+  let leftPadding = (firstDay.getDay() + 1) % 7
   // debugger
   let datesInCurrentMonth = getCurrentMonthDates(firstDay)
   let datesInPreviousMonth = getBeforeDates(firstDay, leftPadding)
