@@ -41,19 +41,19 @@ const allFields = computed(() => [
     section: 'section 1',
     fields: [
       {
-        label: 'Student ID',
+        label: 'شناسه فراگیر',
         name: 'name',
         type: 'data',
         readonly: true,
       },
       {
-        label: 'Joining Date',
+        label: 'تاریخ عضویت',
         name: 'joining_date',
         type: 'data',
         readonly: true,
       },
       {
-        label: 'Email ID',
+        label: 'نشانی رایانامه',
         name: 'email_id',
         type: 'data',
         readonly: true,
@@ -64,19 +64,19 @@ const allFields = computed(() => [
     section: 'section 2',
     fields: [
       {
-        label: 'First Name',
+        label: 'نام',
         name: 'first_name',
         type: 'data',
         readonly: props.editMode,
       },
       {
-        label: 'Middle Name',
+        label: 'نام میانی',
         name: 'middle_name',
         type: 'data',
         readonly: props.editMode,
       },
       {
-        label: 'Last Name',
+        label: 'نام خانوادگی',
         name: 'last_name',
         type: 'data',
         readonly: props.editMode,
@@ -87,19 +87,19 @@ const allFields = computed(() => [
     section: 'section 3',
     fields: [
       {
-        label: 'Mobile Number',
+        label: 'شماره تلفن همراه',
         name: 'student_mobile_number',
         type: 'data',
         readonly: props.editMode,
       },
       {
-        label: 'Date Of Birth',
+        label: 'تاریخ تولد',
         name: 'date_of_birth',
         type: 'data',
         readonly: props.editMode,
       },
       {
-        label: 'Gender',
+        label: 'جنسیت',
         name: 'gender',
         type: 'data',
         readonly: props.editMode,
@@ -110,13 +110,13 @@ const allFields = computed(() => [
     section: 'section 4',
     fields: [
       {
-        label: 'Blood Group',
+        label: 'گروه خونی',
         name: 'blood_group',
         type: 'data',
         readonly: props.editMode,
       },
       {
-        label: 'Nationality',
+        label: 'ملیت',
         name: 'nationality',
         type: 'data',
         readonly: props.editMode,
