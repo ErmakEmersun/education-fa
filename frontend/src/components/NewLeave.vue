@@ -73,11 +73,11 @@ function setErrorMessage(diff = 0, dateType) {
   if (diff < 0) {
     if (dateType === 'from_date') {
       isBeforeError.value = true
-      errorMessage.value = 'From Date must be before To Date'
+      errorMessage.value = 'تاریخ شروع باید پیش از تاریخ پایان باشد'
       newLeave.total_days = 0
     } else if (dateType === 'to_date') {
       isAfterError.value = true
-      errorMessage.value = 'To Date must be after From Date'
+      errorMessage.value = 'تاریخ پایان باید پس از تاریخ شروع باشد'
       newLeave.total_days = 0
     }
   } else {
@@ -89,10 +89,10 @@ function setErrorMessage(diff = 0, dateType) {
 
 const allFields = [
   {
-    section: 'Leave Details',
+    section: 'اطلاعات مرخصی',
     fields: [
       {
-        label: 'Student',
+        label: 'فراگیر',
         name: 'student',
         type: 'data',
         readonly: true,
@@ -100,10 +100,10 @@ const allFields = [
     ],
   },
   {
-    section: 'Date Details',
+    section: 'اطلاعات تاریخ',
     fields: [
       {
-        label: 'From Date',
+        label: 'از تاریخ',
         name: 'from_date',
         type: 'date',
         change: (value) => {
@@ -112,7 +112,7 @@ const allFields = [
         },
       },
       {
-        label: 'To Date',
+        label: 'تا تاریخ',
         name: 'to_date',
         type: 'date',
         change: (value) => {
@@ -121,13 +121,13 @@ const allFields = [
         },
       },
       {
-        label: 'Total Days',
+        label: 'تعداد روزها',
         name: 'total_days',
         type: 'number',
         readonly: true,
       },
       {
-        label: 'Reason',
+        label: 'دلیل',
         name: 'reason',
         type: 'textarea',
       },
