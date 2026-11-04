@@ -25,8 +25,10 @@ add_to_apps_screen = [
 
 # Includes in <head>
 # ------------------
-# Persian RTL styling is scoped to pages rendered with dir="rtl".
+
+# include js, css files in header of desk.html
 app_include_css = ["/assets/education/css/iran_rtl.css"]
+# app_include_js = "/assets/education/js/education.js"
 app_include_js = ["education.bundle.js", "/assets/education/js/campus.js"]
 
 # include js, css files in header of web template
@@ -134,6 +136,7 @@ global_search_doctypes = {
 
 # Home Pages
 # ----------
+
 # application home page (will override Website Settings)
 # home_page = "login"
 
@@ -144,11 +147,13 @@ global_search_doctypes = {
 
 # Generators
 # ----------
+
 # automatically create page for each record of this doctype
 # website_generators = ["Web Page"]
 
 # Jinja
 # ----------
+
 # add methods and filters to jinja environment
 # jinja = {
 # 	"methods": "education.utils.jinja_methods",
@@ -157,5 +162,130 @@ global_search_doctypes = {
 
 # Installation
 # ------------
+
 # before_install = "education.install.before_install"
 after_install = "education.install.after_install"
+
+# Uninstallation
+# ------------
+
+# before_uninstall = "education.uninstall.before_uninstall"
+# after_uninstall = "education.uninstall.after_uninstall"
+
+# Desk Notifications
+# ------------------
+# See frappe.core.notifications.get_notification_config
+
+# notification_config = "education.notifications.get_notification_config"
+
+# Permissions
+# -----------
+# Permissions evaluated in scripted ways
+
+# permission_query_conditions = {
+# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
+# }
+#
+# has_permission = {
+# 	"Event": "frappe.desk.doctype.event.event.has_permission",
+# }
+
+# DocType Class
+# ---------------
+# Override standard doctype classes
+
+
+# override_doctype_class = {
+# 	"ToDo": "custom_app.overrides.CustomToDo"
+# }
+
+
+# Document Events
+# ---------------
+# Hook on document methods and events
+
+doc_events = {
+	"Payment Entry": {
+		"on_submit": "education.overrides.payment_entry.on_payment_entry_submit",
+		"on_cancel": "education.overrides.payment_entry.on_payment_entry_cancel",
+		"on_update_after_submit": "education.overrides.payment_entry.on_payment_entry_update_after_submit",
+	},
+	"Unreconcile Payment": {
+		"on_submit": "education.overrides.payment_entry.on_unreconcile_payment",
+	},
+}
+
+# Scheduled Tasks
+# ---------------
+
+scheduler_events = {
+	"daily": [
+		"education.education.doctype.admission_register.admission_register.process_admission_register_schedules",
+		"education.education.doctype.hostel_allocation.hostel_allocation.process_hostel_allocations",
+	],
+}
+
+# Testing
+# -------
+
+before_tests = "education.education.test_utils.before_tests"
+
+after_migrate = ["education.education.doctype.campus.campus.ensure_campus_accounting_dimension"]
+
+# Overriding Methods
+# ------------------------------
+#
+# override_whitelisted_methods = {
+# 	"frappe.desk.doctype.event.event.get_events": "education.event.get_events"
+# }
+#
+# each overriding function accepts a `data` argument;
+# generated from the base implementation of the doctype dashboard,
+# along with any modifications made in other Frappe apps
+# override_doctype_dashboards = {
+# 	"Task": "education.task.get_dashboard_data"
+# }
+
+# exempt linked doctypes from being automatically cancelled
+#
+# auto_cancel_exempted_doctypes = ["Auto Repeat"]
+
+
+# User Data Protection
+# --------------------
+
+# user_data_fields = [
+# 	{
+# 		"doctype": "{doctype_1}",
+# 		"filter_by": "{filter_by}",
+# 		"redact_fields": ["{field_1}", "{field_2}"],
+# 		"partial": 1,
+# 	},
+# 	{
+# 		"doctype": "{doctype_2}",
+# 		"filter_by": "{filter_by}",
+# 		"partial": 1,
+# 	},
+# 	{
+# 		"doctype": "{doctype_3}",
+# 		"strict": False,
+# 	},
+# 	{
+# 		"doctype": "{doctype_4}"
+# 	}
+# ]
+
+# Authentication and authorization
+# --------------------------------
+
+# auth_hooks = [
+# 	"education.auth.validate"
+# ]
+
+# Translation
+# --------------------------------
+
+# Make link fields search translated document names for these DocTypes
+# Recommended only for DocTypes which have limited documents with untranslated names
+# For example: Role, Gender, etc.
+# translated_search_doctypes = []
