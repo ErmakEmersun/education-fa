@@ -2,7 +2,7 @@
   <Dialog
     v-model="showProfileDialog"
     :options="{
-      title: 'Profile',
+      title: 'پروفایل',
       size: 'xl',
     }"
   >
@@ -59,7 +59,7 @@
             class="flex items-center bg-gray-50 p-2 text-gray-600 text-sm rounded-md"
           >
             <FeatherIcon name="info" class="h-4 mr-2" />
-            In case of any incorrect details, please contact the school admin.
+            در صورت مشاهده اطلاعات نادرست با مدیر آموزشگاه تماس بگیرید.
           </div>
         </div>
       </div>
@@ -82,19 +82,19 @@ const infoFormat = [
     section: 'section 1',
     fields: [
       {
-        label: 'Mobile Number',
+        label: 'شماره تلفن همراه',
         value: studentInfo.student_mobile_number,
       },
       {
-        label: 'Joining Date',
+        label: 'تاریخ عضویت',
         value: studentInfo.joining_date,
       },
       {
-        label: 'Date of Birth',
+        label: 'تاریخ تولد',
         value: studentInfo.date_of_birth,
       },
       {
-        label: 'Address',
+        label: 'نشانی',
         value: [
           studentInfo?.address_line_1,
           studentInfo?.address_line_2,
@@ -113,15 +113,15 @@ const infoFormat = [
     section: 'section 2',
     fields: [
       {
-        label: 'Blood Group',
+        label: 'گروه خونی',
         value: studentInfo.blood_group,
       },
       {
-        label: 'Gender',
+        label: 'جنسیت',
         value: studentInfo.gender,
       },
       {
-        label: 'Nationality',
+        label: 'ملیت',
         value: studentInfo.nationality,
       },
     ],
