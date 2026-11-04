@@ -234,7 +234,7 @@ const allFields = [
         readonly: true,
       },
       {
-        label: 'Student',
+        label: 'شناسه فراگیر',
         name: 'id',
         type: 'data',
         readonly: true,
