@@ -3,9 +3,9 @@ from frappe import _
 from . import __version__ as app_version
 
 app_name = "education"
-app_title = "Education"
+app_title = "آموزش"
 app_publisher = "Frappe Technologies Pvt. Ltd."
-app_description = "Education"
+app_description = "سامانه مدیریت آموزشگاه"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "hello@frappe.io"
@@ -17,7 +17,7 @@ add_to_apps_screen = [
 	{
 		"name": "education",
 		"logo": "/assets/education/edu-logo.svg",
-		"title": "Education",
+		"title": "آموزش",
 		"route": "/app/education",
 		"has_permission": "education.api.permissions.has_app_permission",
 	}
@@ -77,7 +77,7 @@ default_roles = [
 accounting_dimension_doctypes = ["Fees", "Fee Schedule", "Fee Structure", "Fee Term"]
 
 global_search_doctypes = {
-	"Education": [
+	"آموزش": [
 		{"doctype": "Article", "index": 1},
 		{"doctype": "Video", "index": 2},
 		{"doctype": "Topic", "index": 3},
