@@ -63,22 +63,22 @@ const links = [
   // 	icon: LayoutDashboard,
   // },
   {
-    label: 'Schedule',
+    label: 'برنامه زمانی',
     to: '/schedule',
     icon: CalendarCheck,
   },
   {
-    label: 'Grades',
+    label: 'نمرات',
     to: '/grades',
     icon: GraduationCap,
   },
   {
-    label: 'Fees',
+    label: 'شهریه',
     to: '/fees',
     icon: Banknote,
   },
   {
-    label: 'Attendance',
+    label: 'حضور و غیاب',
     to: '/attendance',
     icon: UserCheck,
   },
