@@ -37,7 +37,7 @@
             @click="openInvoicePDF(row)"
             class="hover:bg-gray-900 hover:text-white"
             icon-left="download"
-            label="Download Invoice"
+            label="دریافت صورتحساب"
           />
 
           <Button
@@ -45,7 +45,7 @@
             @click="openModal(row)"
             class="hover:bg-gray-900 hover:text-white flex flex-column items-center justify-center"
             icon-left="credit-card"
-            label="Pay Now"
+            label="پرداخت"
           />
         </ListRowItem>
       </ListRow>
@@ -60,7 +60,7 @@
   </div>
 
   <div v-else>
-    <MissingData message="No Fees found" />
+    <MissingData message="شهریه‌ای یافت نشد" />
   </div>
 </template>
 
@@ -110,32 +110,32 @@ const tableData = reactive({
   rows: [],
   columns: [
     {
-      label: 'Program',
+      label: 'برنامه آموزشی',
       key: 'program',
       width: 1,
     },
     {
-      label: 'Status',
+      label: 'وضعیت',
       key: 'status',
       width: 1,
     },
     {
-      label: 'Payment Date',
+      label: 'تاریخ پرداخت',
       key: 'payment_date',
       width: 1,
     },
     {
-      label: 'Due Date',
+      label: 'سررسید',
       key: 'due_date',
       width: 1,
     },
     {
-      label: 'Amount',
+      label: 'مبلغ',
       key: 'amount',
       width: 1,
     },
     {
-      label: 'Invoice',
+      label: 'صورتحساب',
       key: 'cta',
       width: 1,
     },
@@ -168,6 +168,11 @@ const success = () => {
     iconClasses: 'text-green-600',
   })
 }
+
+const translateStatus = (status) => ({
+  Paid: 'پرداخت‌شده', Unpaid: 'پرداخت‌نشده', Overdue: 'سررسیدگذشته',
+  'Partly Paid': 'پرداخت جزئی',
+}[status] || status)
 
 const badgeColor = (status) => {
   const badgeColorMap = {
