@@ -26,7 +26,7 @@
       v-model="isAttendancePage"
       :options="{
         size: '2xl',
-        title: 'Apply Leave',
+        title: 'درخواست مرخصی',
         actions: [{ label: 'Save', variant: 'solid' }],
       }"
     >
@@ -43,7 +43,7 @@
               !newLeave.reason
             "
             variant="solid"
-            label="Save"
+            label="ذخیره"
             @click="applyLeave.submit()"
           />
         </div>
@@ -74,7 +74,7 @@ onMounted(() => {
   setStudentGroup()
 })
 
-const selectedGroup = ref('Select Student Group')
+const selectedGroup = ref('انتخاب گروه فراگیران')
 const allStudentGroups = ref()
 function setStudentGroup() {
   allStudentGroups.value = getStudentGroups().value
@@ -87,7 +87,7 @@ function setStudentGroup() {
       })
   )
   selectedGroup.value =
-    allStudentGroups.value[0].label || 'Select Student Group'
+    allStudentGroups.value[0].label || 'انتخاب گروه فراگیران'
   attendanceResource.update({
     params: {
       student_group: selectedGroup.value,
@@ -112,6 +112,10 @@ const attendanceStatus = {
   Leave: 'bg-orange-100',
 }
 
+const attendanceLabels = {
+  Present: 'حاضر', Absent: 'غایب', Leave: 'مرخصی', Late: 'با تأخیر',
+}
+
 const attendanceResource = createResource({
   url: 'education.education.api.get_student_attendance',
   params: {
@@ -130,7 +134,7 @@ const attendanceResource = createResource({
     attendance.forEach((attendance) => {
       events.push({
         name: attendance.name,
-        title: attendance.status,
+        title: attendanceLabels[attendance.status] || attendance.status,
         background_color: attendanceStatus[attendance.status],
         date: attendance.date,
         status: attendance.status,
@@ -153,14 +157,14 @@ const applyLeave = createResource({
     isAttendancePage.value = false
     attendanceResource.reload()
     createToast({
-      title: 'Leave applied successfully',
+      title: 'درخواست مرخصی با موفقیت ثبت شد',
       icon: 'check',
       iconClasses: 'text-green-600',
     })
   },
   onError: (err) => {
     createToast({
-      title: err.messages[0] ?? 'Error Occured',
+      title: err.messages[0] ?? 'خطایی رخ داد',
       icon: 'x',
       iconClasses: 'text-red-600',
     })
