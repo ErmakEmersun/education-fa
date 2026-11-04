@@ -154,10 +154,12 @@ let colorMap = {
 }
 
 function parseDate() {
-  let date = props.date.toDateString().split(' ').slice(0, 3)
-  let day = date[0]
-  let eventDate = date[1] + ' ' + date[2]
-  return `${day}, ${eventDate}`
+  return new Intl.DateTimeFormat('fa-IR-u-ca-persian', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }).format(props.date)
 }
 </script>
 
