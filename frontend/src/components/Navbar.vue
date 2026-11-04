@@ -4,14 +4,14 @@
   >
     <div class="flex gap-2 items-center cursor-pointer">
       <h3 class="font-medium text-lg text-gray-900">
-        {{ currentRoute }}
+        {{ routeLabels[currentRoute] || currentRoute }}
       </h3>
     </div>
     <div class="flex flex-row gap-2">
       <Button
         v-if="currentRoute === 'Attendance'"
         variant="solid"
-        label="Apply for Leave"
+        label="درخواست مرخصی"
         @click="setIsAttendancePage(true)"
         icon-left="plus"
       />
@@ -25,6 +25,10 @@ import { leaveStore } from '@/stores/leave'
 
 const router = useRouter()
 const currentRoute = computed(() => router.currentRoute.value.name)
+const routeLabels = {
+  Home: 'خانه', Schedule: 'برنامه زمانی', Grades: 'نمرات', Fees: 'شهریه',
+  Attendance: 'حضور و غیاب', Leaves: 'مرخصی', SchoolDiary: 'دفتر یادداشت',
+}
 
 const { setIsAttendancePage } = leaveStore()
 </script>
