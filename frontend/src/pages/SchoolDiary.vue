@@ -1,5 +1,5 @@
 <template lang="">
-  <div>Diary</div>
+  <div>دفتر یادداشت</div>
 </template>
 
 <script setup></script>
