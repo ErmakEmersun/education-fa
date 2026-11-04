@@ -27,7 +27,7 @@
       :options="{
         size: '2xl',
         title: 'درخواست مرخصی',
-        actions: [{ label: 'Save', variant: 'solid' }],
+        actions: [{ label: 'ذخیره', variant: 'solid' }],
       }"
     >
       <template #body-content>
