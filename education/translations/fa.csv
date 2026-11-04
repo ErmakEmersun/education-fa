@@ -1,4 +1,4 @@
-Education,آموزش
+﻿Education,آموزش
 Public,عمومی
 LMS,سامانه مدیریت یادگیری
 Home,خانه
@@ -42,7 +42,7 @@ Grading Scale,مقیاس نمره‌دهی
 Academic Term,نیم‌سال تحصیلی
 Academic Year,سال تحصیلی
 Admission,پذیرش و ثبت‌نام
-Student Applicant,متقاضی ثبت‌نام
+Student Applicant,متقاضی فراگیری
 Student Admission,پذیرش فراگیر
 Program Enrollment,ثبت‌نام در برنامه آموزشی
 Course Enrollment,ثبت‌نام در دوره
@@ -51,7 +51,7 @@ Fee Category,دسته‌بندی شهریه
 Fee Schedule,برنامه پرداخت شهریه
 Student Fee Collection Report,گزارش دریافت شهریه فراگیران
 Program wise Fee Collection Report,گزارش دریافت شهریه بر اساس برنامه
-Schedule,زمان‌بندی
+Schedule,برنامه زمانی
 Course Schedule,برنامه زمانی دوره
 Attendance,حضور و غیاب
 Student Attendance,حضور و غیاب فراگیر
@@ -78,22 +78,13 @@ Faculty,کادر آموزشی
 Subject,درس
 Subject Schedule,برنامه زمانی درس
 Academic Plan,طرح آموزشی
-Faculty,کادر آموزشی
-Subject,درس
-Subject Schedule,برنامه زمانی درس
-Academic Plan,طرح آموزشی
 Course Offering,ارائه دوره
 Course Topic,سرفصل دوره
 Course Content,محتوای دوره
 Course Instructor,مدرس دوره
-Student Applicant,متقاضی فراگیری
-Student Group,گروه فراگیران
 Student Batch,دوره فراگیران
 Student House,گروه‌بندی فراگیران
-Student Attendance,حضور و غیاب فراگیر
-Instructor,مدرس
 Instructor Name,نام مدرس
-Guardian,سرپرست
 Guardian Name,نام سرپرست
 First Name,نام
 Middle Name,نام میانی
@@ -181,35 +172,23 @@ Present,حاضر
 Absent,غایب
 Late,با تأخیر
 Excused,موجه
-Attendance,حضور و غیاب
 Attendance Report,گزارش حضور و غیاب
 Attendance Date,تاریخ حضور
 Room Number,شماره کلاس
 Room No,شماره کلاس
-Course,دوره
-Program,برنامه آموزشی
 Batch,گروه
-Schedule,برنامه زمانی
 Grades,نمرات
 Grade,نمره
-Assessment,ارزیابی
-Assessment Result,نتیجه ارزیابی
 Maximum Score,حداکثر نمره
 Total Score,نمره کسب‌شده
-Fees,شهریه
 Fee,شهریه
-Fee Structure,ساختار شهریه
-Fee Category,دسته‌بندی شهریه
 Amount,مبلغ
-Paid,پرداخت‌شده
-Unpaid,پرداخت‌نشده
 Overdue,سررسیدگذشته
 Partly Paid,پرداخت جزئی
 Pay Now,پرداخت
 Pay Fees,پرداخت شهریه
 Proceed to Payment,ادامه به پرداخت
 Payment successful,پرداخت با موفقیت انجام شد
-Payment Date,تاریخ پرداخت
 Invoice,صورتحساب
 Download Invoice,دریافت صورتحساب
 Mobile number is required,وارد کردن شماره تلفن همراه الزامی است
@@ -222,13 +201,10 @@ User ID,شناسه کاربری
 Password,گذرواژه
 Expand,باز کردن نوار کناری
 Collapse,جمع کردن نوار کناری
-Home,خانه
-Dashboard,داشبورد
 No data found,اطلاعاتی یافت نشد
 No Fees found,شهریه‌ای یافت نشد
 No grades found,نمره‌ای یافت نشد
 Something went wrong,خطایی رخ داد
 In case of any incorrect details please contact the school admin,در صورت مشاهده اطلاعات نادرست با مدیر آموزشگاه تماس بگیرید
-In case of any incorrect details, please contact the school admin.,در صورت مشاهده اطلاعات نادرست با مدیر آموزشگاه تماس بگیرید
-Room,کلاس
+"In case of any incorrect details, please contact the school admin.",در صورت مشاهده اطلاعات نادرست با مدیر آموزشگاه تماس بگیرید
 Room No:,شماره کلاس:
