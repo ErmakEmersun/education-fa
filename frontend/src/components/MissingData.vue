@@ -7,7 +7,7 @@
 const props = defineProps({
   message: {
     type: String,
-    default: 'No data found',
+    default: 'اطلاعاتی یافت نشد',
   },
 })
 </script>
