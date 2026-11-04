@@ -1,5 +1,9 @@
 import './index.css'
 
+// The student portal is Persian-first in this fork.
+document.documentElement.lang = 'fa'
+document.documentElement.dir = 'rtl'
+
 import { createApp } from 'vue'
 import router from './router'
 import App from './App.vue'
