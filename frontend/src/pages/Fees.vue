@@ -30,7 +30,7 @@
             variant="subtle"
             :theme="badgeColor(row.status) || 'gray'"
             size="md"
-            :label="item"
+            :label="translateStatus(item)"
           />
           <Button
             v-if="column.key === 'cta' && row.status === 'Paid'"
