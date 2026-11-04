@@ -27,7 +27,7 @@
     </div>
   </div>
   <div v-else>
-    <MissingData message="No grades found" />
+    <MissingData message="نمره‌ای یافت نشد" />
   </div>
 </template>
 <script setup>
@@ -55,11 +55,11 @@ const selectedProgram = ref('')
 const tableData = ref({
   columns: [
     {
-      label: 'Course',
+      label: 'دوره',
       key: 'course',
     },
     {
-      label: 'Batch',
+      label: 'گروه',
       key: 'batch',
     },
   ],
