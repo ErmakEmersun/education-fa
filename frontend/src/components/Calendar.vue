@@ -45,7 +45,7 @@ import { Button } from 'frappe-ui'
 import { groupBy } from '@/utils'
 
 const props = defineProps({
-  events: { type: Object, required: false },
+  events: { type: Array, required: false, default: () => [] },
 })
 
 const persianMonthNames = [
