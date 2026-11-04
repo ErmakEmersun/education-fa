@@ -29,7 +29,7 @@
           "
         >
           <div class="text-base font-medium text-gray-900 leading-none">
-            {{ educationSettings?.name || 'Education' }}
+            {{ educationSettings?.name || 'آموزش' }}
           </div>
           <div class="mt-1 text-sm text-gray-700 leading-none">
             {{ user.data.full_name }}
@@ -84,12 +84,12 @@ provide('showProfileDialog', showProfileDialog)
 const userDropdownOptions = [
   {
     icon: 'user',
-    label: 'Profile',
+    label: 'پروفایل',
     onClick: () => (showProfileDialog.value = true),
   },
   {
     icon: 'log-out',
-    label: 'Log out',
+    label: 'خروج',
     onClick: () => logout.submit(),
   },
 ]
