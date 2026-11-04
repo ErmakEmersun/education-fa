@@ -2,8 +2,8 @@
   <div>
     <Dialog
       :options="{
-        title: 'Pay Fees',
-        actions: [{ label: 'Save', variant: 'solid' }],
+        title: 'پرداخت شهریه',
+        actions: [{ label: 'ذخیره', variant: 'solid' }],
       }"
       :modelValue="modelValue"
       @update:modelValue="emits('update:modelValue', $event)"
@@ -38,12 +38,12 @@
                 />
                 <ErrorMessage
                   v-if="field.name === 'mobile_number' && !isMobilePresent"
-                  message="Mobile number is required"
+                  message="وارد کردن شماره تلفن همراه الزامی است"
                   class="pt-2"
                 />
                 <ErrorMessage
                   v-if="field.name === 'email' && !isEmailPresent"
-                  message="Email is Required"
+                  message="وارد کردن رایانامه الزامی است"
                   class="pt-2"
                 />
               </div>
@@ -59,7 +59,7 @@
             @click="openPaymentGateway(close)"
             icon-left="external-link"
             :loading="paymentOptions.loading"
-            label="Proceed to Payment"
+            label="ادامه به پرداخت"
           />
         </div>
       </template>
@@ -197,7 +197,7 @@ function handleFailure(response) {
 function showError(err) {
   console.log(err)
   createToast({
-    message: 'Something went wrong',
+    message: 'خطایی رخ داد',
     icon: 'x',
     iconClasses: 'text-red-600',
   })
