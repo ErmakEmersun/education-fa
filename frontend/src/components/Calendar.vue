@@ -9,7 +9,7 @@
 
     <div class="flex justify-between mb-2">
       <span class="text-xl font-medium">
-        {{ getMonth() + ', ' + currentYear }}</span
+        {{ getMonth() }}</span
       >
       <div class="flex gap-x-1">
         <!-- <button class="border-2 border-green-500 p-2">Previous</button> -->
@@ -61,7 +61,7 @@
                   'font-bold'
                 "
               >
-                {{ date.getDate() }}
+                {{ formatPersianDate(date, 'day') }}
               </span>
 
               <div class="w-full">
@@ -76,7 +76,7 @@
               </div>
             </div>
             <span v-else>{{
-              shortMonthList[date.getMonth()] + ' ' + date.getDate()
+              formatPersianDate(date, 'monthDay')
             }}</span>
           </div>
         </div>
@@ -134,7 +134,7 @@ let shortMonthList = [
   'Dec',
 ]
 
-let daysList = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+let daysList = ['شنبه', 'یکشنبه', 'دوشنبه', 'سه‌شنبه', 'چهارشنبه', 'پنجشنبه', 'جمعه']
 
 let currentMonthDates = computed(() => {
   let allDates = getCalendarDates(currentMonth.value, currentYear.value)
@@ -155,7 +155,18 @@ function parseDate(date) {
 }
 
 function getMonth() {
-  return monthList[currentMonth.value]
+  // Dates remain Gregorian internally for API compatibility; only their display is Jalali.
+  return new Intl.DateTimeFormat('fa-IR-u-ca-persian', {
+    month: 'long',
+    year: 'numeric',
+  }).format(new Date(currentYear.value, currentMonth.value, 1))
+}
+
+function formatPersianDate(date, mode = 'day') {
+  const options = mode === 'monthDay'
+    ? { month: 'short', day: 'numeric' }
+    : { day: 'numeric' }
+  return new Intl.DateTimeFormat('fa-IR-u-ca-persian', options).format(date)
 }
 
 function incrementMonth() {
