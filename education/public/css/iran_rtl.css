@@ -1,0 +1,68 @@
+/* Persian / RTL presentation layer for Frappe Education.
+ * Loaded only when the active document is rendered in RTL mode.
+ * This stylesheet does not translate strings or change date calculations.
+ */
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+  font-family: Vazirmatn, IRANSans, Tahoma, "Segoe UI", sans-serif;
+}
+html[dir="rtl"] .navbar,
+html[dir="rtl"] .page-head,
+html[dir="rtl"] .layout-main-section,
+html[dir="rtl"] .form-section,
+html[dir="rtl"] .list-row,
+html[dir="rtl"] .report-wrapper {
+  direction: rtl;
+}
+html[dir="rtl"] .page-title,
+html[dir="rtl"] .section-head,
+html[dir="rtl"] .form-column,
+html[dir="rtl"] .control-label,
+html[dir="rtl"] .help-box,
+html[dir="rtl"] .list-row-container {
+  text-align: right;
+}
+html[dir="rtl"] .form-control,
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select {
+  text-align: right;
+}
+html[dir="rtl"] .dropdown-menu,
+html[dir="rtl"] .awesomplete ul {
+  text-align: right;
+  right: 0;
+  left: auto;
+}
+html[dir="rtl"] .modal-header,
+html[dir="rtl"] .modal-footer {
+  direction: rtl;
+}
+html[dir="rtl"] .modal-header .close {
+  margin: -1rem auto -1rem -1rem;
+}
+html[dir="rtl"] .breadcrumb {
+  direction: rtl;
+}
+html[dir="rtl"] .breadcrumb-item + .breadcrumb-item::before {
+  float: right;
+  padding-left: .5rem;
+  padding-right: 0;
+}
+html[dir="rtl"] table,
+html[dir="rtl"] .table {
+  direction: rtl;
+}
+html[dir="rtl"] .text-left { text-align: right !important; }
+html[dir="rtl"] .text-right { text-align: left !important; }
+/* Keep code, email addresses, phone numbers and Latin identifiers readable. */
+html[dir="rtl"] code,
+html[dir="rtl"] pre,
+html[dir="rtl"] .text-monospace,
+html[dir="rtl"] input[type="email"],
+html[dir="rtl"] input[type="url"],
+html[dir="rtl"] input[type="tel"] {
+  direction: ltr;
+  text-align: left;
+}
