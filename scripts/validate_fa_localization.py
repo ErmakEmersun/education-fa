@@ -4,12 +4,13 @@ import csv
 import json
 import re
 import sys
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 TRANSLATIONS = ROOT / "education" / "translations" / "fa.csv"
 DOCTYPE_ROOT = ROOT / "education" / "education" / "doctype"
-PERSIAN = re.compile(r"[\\u0600-\\u06FF]")
+PERSIAN = re.compile(r"[\u0600-\u06FF]")
 errors = []
 
 rows = []
@@ -24,13 +25,13 @@ with TRANSLATIONS.open(encoding="utf-8-sig", newline="") as handle:
             errors.append(f"fa.csv:{line_number}: translation has no Persian characters")
         rows.append((row[0].strip(), row[1].strip()))
 
-keys = [key for key, _ in rows]
-duplicates = sorted({key for key in keys if keys.count(key) > 1})
+counts = Counter(key for key, _ in rows)
+duplicates = sorted(key for key, count in counts.items() if count > 1)
 if duplicates:
     errors.append("duplicate translation keys: " + ", ".join(duplicates[:20]))
 
 required = {"Student", "Instructor", "Course", "Date of Birth", "Save", "Cancel"}
-missing = sorted(required.difference(keys))
+missing = sorted(required.difference(counts))
 if missing:
     errors.append("missing required translation keys: " + ", ".join(missing))
 
@@ -45,6 +46,6 @@ for path in sorted(DOCTYPE_ROOT.rglob("*.json")):
 print(f"Persian translation rows: {len(rows)}")
 print(f"Doctype JSON files validated: {json_count}")
 if errors:
-    print("\\n".join(f"ERROR: {item}" for item in errors), file=sys.stderr)
+    print("\n".join(f"ERROR: {item}" for item in errors), file=sys.stderr)
     sys.exit(1)
 print("Persian localization asset checks passed.")
