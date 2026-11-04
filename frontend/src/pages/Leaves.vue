@@ -1,5 +1,5 @@
 <template>
-  <div>Leaves</div>
+  <div>مرخصی‌ها</div>
 </template>
 
 <script setup>
