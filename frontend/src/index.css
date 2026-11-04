@@ -1,2 +1,29 @@
 @import './assets/Inter/inter.css';
 @import 'frappe-ui/src/style.css';
+
+/* Persian-first student portal presentation. */
+html[dir='rtl'],
+html[dir='rtl'] body,
+html[dir='rtl'] #app {
+  direction: rtl;
+  text-align: right;
+  font-family: Tahoma, 'Segoe UI', sans-serif;
+}
+
+html[dir='rtl'] input,
+html[dir='rtl'] textarea,
+html[dir='rtl'] select {
+  text-align: right;
+}
+
+html[dir='rtl'] .text-left { text-align: right !important; }
+html[dir='rtl'] .text-right { text-align: left !important; }
+html[dir='rtl'] .qalendar,
+html[dir='rtl'] pre,
+html[dir='rtl'] code,
+html[dir='rtl'] input[type='email'],
+html[dir='rtl'] input[type='url'],
+html[dir='rtl'] input[type='tel'] {
+  direction: ltr;
+  text-align: left;
+}
