@@ -61,7 +61,7 @@
           <div class="flex gap-2 items-center" v-if="event.room">
             <FeatherIcon name="circle" class="h-4 w-4" />
             <span class="text-sm font-normal">
-              Room No: &nbsp {{ event.room }}
+              شماره کلاس: &nbsp {{ event.room }}
             </span>
           </div>
         </div>
