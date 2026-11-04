@@ -35,7 +35,7 @@
                 <div v-for="field in section.fields" :key="field.label">
                   <div
                     class="flex items-center"
-                    v-if="field.label !== 'Address'"
+                    v-if="field.label !== 'نشانی'"
                   >
                     <p class="w-1/2 text-sm text-gray-600">
                       {{ field.label }}:&nbsp;
