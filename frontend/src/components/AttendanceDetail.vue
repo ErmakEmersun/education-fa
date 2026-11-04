@@ -58,7 +58,7 @@ const tableData = reactive({
       time: '10:00 - 11:00',
       room_number: 'A-101',
       status: {
-        label: 'Present',
+        label: 'حاضر',
         color: 'green',
       },
     },
@@ -68,29 +68,29 @@ const tableData = reactive({
       time: '13:00 - 17:00',
       room_number: 'A-102',
       status: {
-        label: 'Absent',
+        label: 'غایب',
         color: 'red',
       },
     },
   ],
   columns: [
     {
-      label: 'Date',
+      label: 'تاریخ',
       key: 'date',
       width: 1,
     },
     {
-      label: 'Time',
+      label: 'زمان',
       key: 'time',
       width: 1,
     },
     {
-      label: 'Room Number',
+      label: 'شماره کلاس',
       key: 'room_number',
       width: 1,
     },
     {
-      label: 'Status',
+      label: 'وضعیت',
       key: 'status',
       width: 1,
     },
