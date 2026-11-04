@@ -1,4 +1,4 @@
-﻿Education,آموزش
+﻿Education,تحصیلات
 Public,عمومی
 LMS,سامانه مدیریت یادگیری
 Home,خانه
@@ -45,7 +45,7 @@ Admission,پذیرش و ثبت‌نام
 Student Applicant,متقاضی فراگیری
 Student Admission,پذیرش فراگیر
 Program Enrollment,ثبت‌نام در برنامه آموزشی
-Course Enrollment,ثبت‌نام در دوره
+Course Enrollment,ثبت‌نام دوره
 Fee Structure,ساختار شهریه
 Fee Category,دسته‌بندی شهریه
 Fee Schedule,برنامه پرداخت شهریه
@@ -82,7 +82,7 @@ Course Offering,ارائه دوره
 Course Topic,سرفصل دوره
 Course Content,محتوای دوره
 Course Instructor,مدرس دوره
-Student Batch,دوره فراگیران
+Student Batch,گروه فراگیران
 Student House,گروه‌بندی فراگیران
 Instructor Name,نام مدرس
 Guardian Name,نام سرپرست
@@ -208,3 +208,173 @@ Something went wrong,خطایی رخ داد
 In case of any incorrect details please contact the school admin,در صورت مشاهده اطلاعات نادرست با مدیر آموزشگاه تماس بگیرید
 "In case of any incorrect details, please contact the school admin.",در صورت مشاهده اطلاعات نادرست با مدیر آموزشگاه تماس بگیرید
 Room No:,شماره کلاس:
+Student Email Address,رایانامه فراگیر
+Student Mobile Number,شماره همراه فراگیر
+Personal Details,اطلاعات فردی
+Guardian Details,اطلاعات سرپرست
+Sibling Details,اطلاعات خواهر و برادر
+Guardians,سرپرستان
+Siblings,خواهران و برادران
+Date of Leaving,تاریخ ترک تحصیل
+Leaving Certificate Number,شماره گواهی ترک تحصیل
+Reason For Leaving,دلیل ترک تحصیل
+Relations,ارتباط‌ها
+Exit,خروج
+Customer Details,اطلاعات مشتری
+Customer,مشتری
+Customer Group,گروه مشتری
+Technical Skills,مهارت‌های فنی
+Self Assessed Skills,مهارت‌های خودارزیابی‌شده
+Alumni?,فارغ‌التحصیل
+Main Department,گروه آموزشی اصلی
+Allowed Departments,گروه‌های آموزشی مجاز
+Phone Number,شماره تلفن
+Title,عنوان
+Course Name,نام دوره
+Department,دپارتمان
+Hero Image,تصویر اصلی
+Default Grading Scale,مقیاس پیش‌فرض نمره‌دهی
+Evaluation Type,نوع ارزیابی
+Area of Study,حوزه تحصیلی
+Course Abbreviation,مخفف دوره
+Short Description,توضیح کوتاه
+Full Description,توضیحات کامل
+Area of Specialization,حوزه تخصص
+Minimum Unit Load,حداقل واحد
+Maximum Unit Load,حداکثر واحد
+Course Credit,واحد دوره
+Course Change Fee Item,آیتم هزینه تغییر دوره
+Registration Fee Item,آیتم هزینه ثبت‌نام
+Course Change Fee?,هزینه تغییر دوره؟
+Registration Fee?,هزینه ثبت‌نام؟
+Subject Selection,انتخاب درس
+Registration Fee Amount,مبلغ هزینه ثبت‌نام
+Course Change Fee Amount,مبلغ هزینه تغییر دوره
+Grade Templates,الگوهای نمره‌دهی
+Program Name,نام برنامه آموزشی
+Program Abbreviation,مخفف برنامه
+Program Level,مقطع تحصیلی
+Required Thesis,پایان‌نامه الزامی
+Subject Name,نام درس
+Subject Type,نوع درس
+Abbreviation,مخفف
+Credit Hours,ساعات واحد درسی
+Credit,واحد
+Attempted Units,واحدهای اخذشده
+Publish on website,انتشار در وب‌سایت
+Admission Start Date,تاریخ شروع پذیرش
+Admission End Date,تاریخ پایان پذیرش
+Eligibility and Details,شرایط و جزئیات
+Introduction,معرفی
+Enable Admission Application,فعال‌سازی فرم درخواست پذیرش
+Application Status,وضعیت درخواست
+Application Date,تاریخ درخواست
+Admission Register,دفتر پذیرش
+Admission Based on,مبنای پذیرش
+Is already a Student,آیا فراگیر فعلی است؟
+Registration Fee,هزینه ثبت‌نام
+Course Fee Amount,مبلغ شهریه دوره
+Based On,مبنای ثبت
+Students HTML,نمایش فراگیران
+Category,دسته‌بندی
+Mark as Present,ثبت وضعیت حضور
+Attendance Based On,مبنای حضور و غیاب
+Total Leave Days,مجموع روزهای مرخصی
+Type,نوع
+Log,گزارش رویداد
+Alternate Number,شماره تماس جایگزین
+Occupation,شغل
+Designation,سمت
+Work Address,نشانی محل کار
+Guardian Of,سرپرستِ
+Students,فراگیران
+Guardian Interests,علاقه‌مندی‌های سرپرست
+Interests,علاقه‌مندی‌ها
+Academic Year Name,نام سال تحصیلی
+Year Start Date,تاریخ شروع سال تحصیلی
+Year End Date,تاریخ پایان سال تحصیلی
+Term Name,نام نیم‌سال
+Term Start Date,تاریخ شروع نیم‌سال
+Term End Date,تاریخ پایان نیم‌سال
+Assessment Name,نام ارزیابی
+Assignment Type,نوع تکلیف
+Assessment Group Name,نام گروه ارزیابی
+Parent Assessment Group,گروه ارزیابی والد
+Schedule Date,تاریخ برنامه
+Evaluate,ارزیابی
+Score,نمره
+Percentage,درصد
+Summary,خلاصه
+Comment,دیدگاه
+Question,پرسش
+Quiz Configuration,تنظیمات آزمونک
+Passing Score,حد نصاب قبولی
+Max Attempts,حداکثر دفعات تلاش
+Grading Basis,مبنای نمره‌دهی
+Is Time-Bound,دارای محدودیت زمانی
+Duration,مدت‌زمان
+Send Payment Request Email,ارسال رایانامه درخواست پرداخت
+Student Batches,گروه‌های فراگیران
+Fee Breakup (each student),جزئیات شهریه هر فراگیر
+Components,اجزای هزینه
+Total Amount per Student,مبلغ کل هر فراگیر
+Grand Total,جمع کل
+In Words,به حروف
+Printing Settings,تنظیمات چاپ
+Letter Head,سربرگ
+Print Heading,عنوان چاپ
+Receivable Account,حساب دریافتنی
+Cost Center,مرکز هزینه
+Institution,مؤسسه
+Posting Date,تاریخ ثبت حسابداری
+Total Amount,مبلغ کل
+Include Payment,احتساب پرداخت
+Send Payment Request,ارسال درخواست پرداخت
+Posting Time,زمان ثبت
+Edit Posting Date and Time,ویرایش تاریخ و زمان ثبت
+Outstanding Amount,مبلغ باقی‌مانده
+Income Account,حساب درآمد
+Print Settings,تنظیمات چاپ
+Student Details,اطلاعات فراگیر
+Room Name,نام کلاس
+Room Type,نوع کلاس
+Seating Capacity,ظرفیت پذیرش
+Location,موقعیت
+Building,ساختمان
+Floor,طبقه
+Facilities,امکانات
+Current Academic Year,سال تحصیلی جاری
+Current Academic Term,نیم‌سال تحصیلی جاری
+Attendance Freeze Date,تاریخ توقف ثبت حضور و غیاب
+Make Academic Term Mandatory,الزامی کردن نیم‌سال تحصیلی
+Faculty Records to be created by,ایجاد پرونده کادر آموزشی توسط
+Skip User creation for new Student,عدم ایجاد حساب کاربری برای فراگیر جدید
+Submit Sales Invoice from Course Enrollment / Fee Schedule,ثبت صورتحساب فروش از ثبت‌نام دوره یا برنامه شهریه
+Portal Settings,تنظیمات پرتال
+Attendance Based on Subject Schedule,ثبت حضور بر اساس برنامه درس
+Razorpay Key,کلید درگاه Razorpay
+Razorpay Secret,کلید محرمانه Razorpay
+School / College Name Abbreviation,مخفف نام مدرسه یا دانشگاه
+School / College Logo,نشان مدرسه یا دانشگاه
+Sales Invoice Posting Date should be same as Fee Schedule Posting Date,تاریخ ثبت صورتحساب باید با تاریخ ثبت برنامه شهریه یکسان باشد
+Create Sales Order instead of Sales Invoice,ایجاد سفارش فروش به‌جای صورتحساب فروش
+Submit Sales Order from Course Enrollment / Fee Schedule,ثبت سفارش فروش از ثبت‌نام دوره یا برنامه شهریه
+Sales Order Posting Date should be same as Fee Schedule Posting Date,تاریخ ثبت سفارش فروش باید با تاریخ ثبت برنامه شهریه یکسان باشد
+Faculty Name,نام مدرس
+Color,رنگ
+Class Schedule Color,رنگ برنامه کلاس
+Enrollment Date,تاریخ ثبت‌نام
+Billing Status,وضعیت صورتحساب
+Billing Error,خطای صورتحساب
+Roll Number,شماره فراگیر
+Final Grade,نمره نهایی
+Overall Percentage,درصد کل
+Overall Grade,ارزیابی نهایی
+Subject Grades,نمرات دروس
+Assignment Components,اجزای تکالیف
+Attendance Components,اجزای حضور و غیاب
+Grading Scale Name,نام مقیاس نمره‌دهی
+Grading Scale Intervals,بازه‌های مقیاس نمره‌دهی
+Intervals,بازه‌ها
+Topic Content,محتوای سرفصل
+Assessment Type,نوع ارزیابی
