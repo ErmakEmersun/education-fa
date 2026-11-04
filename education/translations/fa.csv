@@ -78,3 +78,157 @@ Faculty,کادر آموزشی
 Subject,درس
 Subject Schedule,برنامه زمانی درس
 Academic Plan,طرح آموزشی
+Faculty,کادر آموزشی
+Subject,درس
+Subject Schedule,برنامه زمانی درس
+Academic Plan,طرح آموزشی
+Course Offering,ارائه دوره
+Course Topic,سرفصل دوره
+Course Content,محتوای دوره
+Course Instructor,مدرس دوره
+Student Applicant,متقاضی فراگیری
+Student Group,گروه فراگیران
+Student Batch,دوره فراگیران
+Student House,گروه‌بندی فراگیران
+Student Attendance,حضور و غیاب فراگیر
+Instructor,مدرس
+Instructor Name,نام مدرس
+Guardian,سرپرست
+Guardian Name,نام سرپرست
+First Name,نام
+Middle Name,نام میانی
+Last Name,نام خانوادگی
+Full Name,نام و نام خانوادگی
+Student Name,نام فراگیر
+Student ID,شناسه فراگیر
+Email,رایانامه
+Email ID,نشانی رایانامه
+Mobile Number,شماره تلفن همراه
+Phone,تلفن
+Address,نشانی
+Address Line 1,نشانی اصلی
+Address Line 2,ادامه نشانی
+City,شهر
+State,استان
+Country,کشور
+Postal Code,کد پستی
+Date of Birth,تاریخ تولد
+Date Of Birth,تاریخ تولد
+Joining Date,تاریخ عضویت
+Gender,جنسیت
+Male,مرد
+Female,زن
+Blood Group,گروه خونی
+Nationality,ملیت
+Photo,تصویر
+Image,تصویر
+Attachments,پیوست‌ها
+Description,توضیحات
+Notes,یادداشت‌ها
+Status,وضعیت
+Enabled,فعال
+Disabled,غیرفعال
+Draft,پیش‌نویس
+Submitted,ثبت نهایی‌شده
+Cancelled,لغوشده
+Open,باز
+Closed,بسته
+New,جدید
+Edit,ویرایش
+Update,به‌روزرسانی
+Save,ذخیره
+Submit,ثبت نهایی
+Cancel,لغو
+Delete,حذف
+Add,افزودن
+Create,ایجاد
+Search,جستجو
+Filter,فیلتر
+Clear,پاک‌کردن
+Refresh,بازخوانی
+Print,چاپ
+Download,دریافت
+Upload,بارگذاری
+View,مشاهده
+Details,جزئیات
+Actions,عملیات
+Select,انتخاب
+Select All,انتخاب همه
+Select Student Group,انتخاب گروه فراگیران
+Select Program,انتخاب برنامه آموزشی
+Select Course,انتخاب دوره
+From Date,از تاریخ
+To Date,تا تاریخ
+Start Date,تاریخ شروع
+End Date,تاریخ پایان
+Due Date,سررسید
+Payment Date,تاریخ پرداخت
+Date,تاریخ
+Time,زمان
+Start Time,ساعت شروع
+End Time,ساعت پایان
+Total Days,تعداد روزها
+Reason,دلیل
+Leave,مرخصی
+Leave Details,اطلاعات مرخصی
+Date Details,اطلاعات تاریخ
+Apply Leave,درخواست مرخصی
+Apply for Leave,ثبت درخواست مرخصی
+Leave applied successfully,درخواست مرخصی با موفقیت ثبت شد
+From Date must be before To Date,تاریخ شروع باید پیش از تاریخ پایان باشد
+To Date must be after From Date,تاریخ پایان باید پس از تاریخ شروع باشد
+Present,حاضر
+Absent,غایب
+Late,با تأخیر
+Excused,موجه
+Attendance,حضور و غیاب
+Attendance Report,گزارش حضور و غیاب
+Attendance Date,تاریخ حضور
+Room Number,شماره کلاس
+Room No,شماره کلاس
+Course,دوره
+Program,برنامه آموزشی
+Batch,گروه
+Schedule,برنامه زمانی
+Grades,نمرات
+Grade,نمره
+Assessment,ارزیابی
+Assessment Result,نتیجه ارزیابی
+Maximum Score,حداکثر نمره
+Total Score,نمره کسب‌شده
+Fees,شهریه
+Fee,شهریه
+Fee Structure,ساختار شهریه
+Fee Category,دسته‌بندی شهریه
+Amount,مبلغ
+Paid,پرداخت‌شده
+Unpaid,پرداخت‌نشده
+Overdue,سررسیدگذشته
+Partly Paid,پرداخت جزئی
+Pay Now,پرداخت
+Pay Fees,پرداخت شهریه
+Proceed to Payment,ادامه به پرداخت
+Payment successful,پرداخت با موفقیت انجام شد
+Payment Date,تاریخ پرداخت
+Invoice,صورتحساب
+Download Invoice,دریافت صورتحساب
+Mobile number is required,وارد کردن شماره تلفن همراه الزامی است
+Email is Required,وارد کردن رایانامه الزامی است
+Profile,پروفایل
+Log out,خروج
+Login,ورود
+Login to your FrappeUI App!,ورود به سامانه آموزش
+User ID,شناسه کاربری
+Password,گذرواژه
+Expand,باز کردن نوار کناری
+Collapse,جمع کردن نوار کناری
+Home,خانه
+Dashboard,داشبورد
+No data found,اطلاعاتی یافت نشد
+No Fees found,شهریه‌ای یافت نشد
+No grades found,نمره‌ای یافت نشد
+Something went wrong,خطایی رخ داد
+In case of any incorrect details please contact the school admin,در صورت مشاهده اطلاعات نادرست با مدیر آموزشگاه تماس بگیرید
+In case of any incorrect details, please contact the school admin.,در صورت مشاهده اطلاعات نادرست با مدیر آموزشگاه تماس بگیرید
+Room,کلاس
+Room No:,شماره کلاس:
