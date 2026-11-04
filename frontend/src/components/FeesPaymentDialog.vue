@@ -225,10 +225,10 @@ const billingDetails = reactive({
 
 const allFields = [
   {
-    section: 'Student Details',
+    section: 'اطلاعات فراگیر',
     fields: [
       {
-        label: 'Student',
+        label: 'فراگیر',
         name: 'student',
         type: 'data',
         readonly: true,
@@ -240,59 +240,59 @@ const allFields = [
         readonly: true,
       },
       {
-        label: 'Amount',
+        label: 'مبلغ',
         name: 'amount',
         type: 'data',
         readonly: true,
       },
       {
-        label: 'Program',
+        label: 'برنامه آموزشی',
         name: 'program',
         type: 'data',
         readonly: true,
       },
       {
-        label: 'Mobile Number',
+        label: 'شماره تلفن همراه',
         name: 'mobile_number',
         type: 'data',
       },
       {
-        label: 'Email',
+        label: 'رایانامه',
         name: 'email',
         type: 'data',
       },
     ],
   },
   {
-    section: 'Student Address',
+    section: 'نشانی فراگیر',
     fields: [
       {
-        label: 'Address Line 1',
+        label: 'نشانی اصلی',
         name: 'address_line_1',
         type: 'data',
       },
       {
-        label: 'Address Line 2',
+        label: 'ادامه نشانی',
         name: 'address_line_2',
         type: 'data',
       },
       {
-        label: 'City',
+        label: 'شهر',
         name: 'city',
         type: 'data',
       },
       {
-        label: 'State',
+        label: 'استان',
         name: 'state',
         type: 'data',
       },
       {
-        label: 'Country',
+        label: 'کشور',
         name: 'country',
         type: 'data',
       },
       {
-        label: 'Pincode',
+        label: 'کد پستی',
         name: 'pincode',
         type: 'data',
       },
