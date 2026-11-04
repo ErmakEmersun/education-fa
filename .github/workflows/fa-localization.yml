@@ -1,0 +1,52 @@
+name: Persian localization checks
+
+on:
+  push:
+    branches:
+      - fa/iranian-localization
+    paths:
+      - 'education/translations/fa.csv'
+      - 'education/education/doctype/**/*.json'
+      - 'frontend/**'
+      - 'scripts/**'
+      - '.github/workflows/fa-localization.yml'
+  pull_request:
+    paths:
+      - 'education/translations/fa.csv'
+      - 'education/education/doctype/**/*.json'
+      - 'frontend/**'
+      - 'scripts/**'
+      - '.github/workflows/fa-localization.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  localization-assets:
+    name: Validate Persian localization assets
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate translation CSV and DocType JSON
+        run: python scripts/validate_fa_localization.py
+
+  student-portal-build:
+    name: Build student portal
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: yarn
+          cache-dependency-path: frontend/yarn.lock
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: yarn install --frozen-lockfile
+      - name: Build student portal
+        working-directory: frontend
+        run: yarn build
