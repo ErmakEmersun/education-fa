@@ -230,7 +230,10 @@ scheduler_events = {
 
 before_tests = "education.education.test_utils.before_tests"
 
-after_migrate = ["education.education.doctype.campus.campus.ensure_campus_accounting_dimension"]
+after_migrate = [
+    "education.education.doctype.campus.campus.ensure_campus_accounting_dimension",
+    "education.install.create_education_yarh_roles",
+]
 
 # Overriding Methods
 # ------------------------------
