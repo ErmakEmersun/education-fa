@@ -10,6 +10,7 @@ def after_install():
 	setup_fixtures()
 	create_student_role()
 	create_faculty_role()
+	create_education_yarh_roles()
 	create_parent_assessment_group()
 	create_invoice_permissions()
 	create_custom_fields(get_custom_fields())
