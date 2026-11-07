@@ -176,3 +176,21 @@ def get_custom_fields():
 			},
 		],
 	}
+
+
+
+def create_education_yarh_roles():
+    """Create the four management workspace roles without changing existing roles."""
+    role_names = [
+        "Education Executive Manager",
+        "Education Training Manager",
+        "Education Learner Manager",
+        "Education Faculty Manager",
+    ]
+    for role_name in role_names:
+        if not frappe.db.exists("Role", role_name):
+            frappe.get_doc({
+                "doctype": "Role",
+                "role_name": role_name,
+                "desk_access": 1,
+            }).insert(ignore_permissions=True)
