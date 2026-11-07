@@ -76,7 +76,6 @@ def get_visible_workspaces(roles):
     role_set = set(roles or [])
 
     if EXECUTIVE_ROLE in role_set:
-        selected = [EXECUTIVE_ROLE]
         workspaces = list(WORKSPACE_ROLES.items())
         return {
             "role": EXECUTIVE_ROLE,
