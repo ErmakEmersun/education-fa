@@ -67,3 +67,39 @@ class TestEducationWorkspaces(FrappeTestCase):
         self.assertTrue(permissions["Education Learner Manager"].write)
         self.assertTrue(permissions["Education Learner Manager"].create)
         self.assertFalse(permissions["Education Learner Manager"].delete)
+
+
+    def test_course_faculty_enrollment_and_attendance_permissions_are_scoped(self):
+        faculty = {row.role: row for row in frappe.get_meta("Faculty").permissions}
+        self.assertTrue(faculty["Education Faculty Manager"].create)
+        self.assertTrue(faculty["Education Faculty Manager"].write)
+        self.assertFalse(faculty["Education Faculty Manager"].delete)
+        self.assertTrue(faculty["Education Executive Manager"].delete)
+        self.assertTrue(faculty["Education Training Manager"].read)
+        self.assertFalse(faculty["Education Training Manager"].write)
+
+        course = {row.role: row for row in frappe.get_meta("Course").permissions}
+        self.assertTrue(course["Education Training Manager"].create)
+        self.assertTrue(course["Education Training Manager"].write)
+        self.assertTrue(course["Education Executive Manager"].delete)
+        self.assertFalse(course["Education Faculty Manager"].write)
+
+        enrollment = {
+            row.role: row
+            for row in frappe.get_meta("Course Enrollment").permissions
+        }
+        self.assertTrue(enrollment["Education Learner Manager"].create)
+        self.assertTrue(enrollment["Education Learner Manager"].write)
+        self.assertFalse(enrollment["Education Learner Manager"].submit)
+        self.assertFalse(enrollment["Education Learner Manager"].delete)
+        self.assertTrue(enrollment["Education Executive Manager"].submit)
+
+        attendance = {
+            row.role: row
+            for row in frappe.get_meta("Student Attendance").permissions
+        }
+        self.assertTrue(attendance["Education Training Manager"].create)
+        self.assertTrue(attendance["Education Training Manager"].write)
+        self.assertTrue(attendance["Education Training Manager"].submit)
+        self.assertFalse(attendance["Education Learner Manager"].write)
+        self.assertTrue(attendance["Education Executive Manager"].delete)
