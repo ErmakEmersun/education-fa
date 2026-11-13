@@ -1,3 +1,4 @@
+import frappe
 from frappe.tests.utils import FrappeTestCase
 
 from education.api.permissions import get_visible_workspaces
