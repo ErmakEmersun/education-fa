@@ -7,6 +7,10 @@ on:
     paths:
       - 'education/translations/fa.csv'
       - 'education/education/doctype/**/*.json'
+      - 'education/api/**'
+      - 'education/install.py'
+      - 'education/hooks.py'
+      - 'education/education/test_*.py'
       - 'frontend/**'
       - 'scripts/**'
       - '.github/workflows/fa-localization.yml'
@@ -14,6 +18,10 @@ on:
     paths:
       - 'education/translations/fa.csv'
       - 'education/education/doctype/**/*.json'
+      - 'education/api/**'
+      - 'education/install.py'
+      - 'education/hooks.py'
+      - 'education/education/test_*.py'
       - 'frontend/**'
       - 'scripts/**'
       - '.github/workflows/fa-localization.yml'
@@ -24,7 +32,7 @@ permissions:
 
 jobs:
   localization-assets:
-    name: Validate Persian localization assets
+    name: Validate Persian localization assets and Python syntax
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -33,6 +41,8 @@ jobs:
           python-version: '3.12'
       - name: Validate translation CSV and DocType JSON
         run: python scripts/validate_fa_localization.py
+      - name: Check syntax of workspace backend and tests
+        run: python -m compileall -q education/api education/install.py education/hooks.py education/education/test_workspaces.py
 
   student-portal-build:
     name: Build student portal
